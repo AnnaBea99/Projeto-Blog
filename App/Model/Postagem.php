@@ -10,7 +10,7 @@ class Postagem{
         $sql = $con->prepare($sql); //tratamento do que vai por negocio la
         $sql->execute();
 
-        var_dump($sql->fetchAll()); // fetchAll() -> lista todos os resultados
+        // var_dump($sql->fetchAll()); // fetchAll() -> lista todos os resultados
 
         //Mostrando o conteudo
         $resultado = array();
