@@ -6,7 +6,7 @@ class Postagem{
         $con = Connection::getConn();
 
         //Pegando as coisas do Banco de dados
-        $sql = "SELEC * FROM postagem ORDER BY id DESC" ;
+        $sql = "SELECT * FROM postagem ORDER BY id DESC" ;
         $sql = $con->prepare($sql); //tratamento do que vai por negocio la
         $sql->execute();
 
