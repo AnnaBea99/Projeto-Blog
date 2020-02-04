@@ -1,0 +1,65 @@
+/* Esqueci para o que isso serve */
+*{
+    margin: 0; 
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #483D8B;
+}
+
+/* Configuração da "caixa" do site  */
+#corpo{
+  width: 800px;
+  margin: 0 auto;
+  background-color: white; 
+
+}
+
+/* Espaçamento e outras coisas*/
+#topo{
+    padding: 20px 25px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Configuração do topo da página */
+#topo a{
+color: #4F4F4F;
+text-decoration: none; /* Tira aquela linha embaixo das palavras */
+font-size: 20px;
+}
+
+/* Quando passar o mouse em cima fica "marcado" */
+#topo a:hover{
+text-decoration: underline;
+}
+
+#conteudo{
+    background-color: white; 
+    padding: 20px 25px;
+}
+
+#conteudo article{
+    margin-bottom: 20 px;
+}
+#conteudo article h2 a{
+    font-size: 22px;
+    color: #483D8B;
+    text-decoration: none;
+}
+
+#conteudo article h2 a:hover{
+text-decoration: underline;
+}
+
+#conteudo article p{
+    font-size: 15px;
+    color: #483D8B;
+    padding-left: 2px;
+}
+
+#conteudo h1{
+    font-size: 24px;
+    color: #008080;
+    margin-bottom: 20px;
+}
