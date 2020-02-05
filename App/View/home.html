@@ -1,10 +1,15 @@
 <section>
     <h1>Postagens:</h1>
+    <!-- for para repetir e colocar as postagens enquanto houver, ou seja ele cria vário article -->
+    {% for postagem in postagens %}
     <article>
         <header>
-            <h2><a href="#">Título da postagem</a></h2>
+            <!-- chamando e colocando os titulos qeu estão no banco de dados -->
+            <h2><a href="#">{{postagem.titulo}}</a></h2>
         </header>
 
-            <p>Conteúdo da postagem</p>
+            <!-- colocando as duas chaves chamando o parametro que está na classe homecontroller sem ter que criar o negocio php dentro do html -->
+            <p>{{postagem.conteudo}}</p> 
     </article>
+    {% endfor %}
 </section>

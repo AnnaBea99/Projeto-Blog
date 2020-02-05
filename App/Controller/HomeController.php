@@ -15,9 +15,11 @@ class HomeController{
         $template = $twig->load('home.html');
 
         $parametros = array();
-        $parametros['nome'] = 'Anna';
+        $parametros['postagens'] = $colecPostagens;
+        // Teste: $parametros['nome'] = 'Anna'; //usando para passar informações para a pagina home.html
 
-        $conteudo = $template->render($parametros);
+        //vai renderizar a view com os parametros
+        $conteudo = $template->render($parametros); 
         echo $conteudo;
 
         } catch (Exception $e) {
