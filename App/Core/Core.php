@@ -29,7 +29,9 @@ class Core{
         //Fazendo a variavel chamar o home e o metodo
         //Criando um arry com um objeto da classe controller
         //Este método e o objeto da classe controller será possivel executar o conteudo
-        call_user_func_array(array(new $controller, $acao), array());
+        if(isset($urlGet['id']))
+        call_user_func_array(array(new $controller, $acao), array('id' => $urlGet['id']) ?? null);
 
+        //urlget está mandando as infromações para o postcontroller
     }
 }

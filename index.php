@@ -6,9 +6,10 @@
 //fazendo o chamado da classe core
 require_once 'App/Core/Core.php';
 
-//Fazendo a importação do controller Home
+//Fazendo a importação dos controller
 require_once 'App/Controller/HomeController.php';
 require_once 'App/Controller/ErroController.php';
+require_once 'App/Controller/PostController.php';
 
 //Chamando a classe de Postagem 
 require_once 'App/Model/Postagem.php';
@@ -18,6 +19,8 @@ require_once 'Lib/DataBase/Connection.php';
 
 //chamando o twig autoload chama tudo
 require_once 'vendor/autoload.php';
+
+
 
 $template = file_get_contents('App/Template/estrutura.html');
 
